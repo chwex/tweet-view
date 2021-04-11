@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getRocketBySlug } from "../../api/spaceApi.js";
 import { Container, Row, Carousel } from "react-bootstrap";
+import "./RocketDetail.css"
 
 
 const RocketDetail = (props) => {
@@ -39,7 +40,7 @@ const RocketDetail = (props) => {
             return(
               <Carousel.Item key = {rocket.id + i}>
                 <img
-                  className="img-fluid"
+                  className="img-fluid rocket-image"
                   src={image}
                   alt="First slide"
                 />

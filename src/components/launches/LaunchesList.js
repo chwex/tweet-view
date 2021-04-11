@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./LaunchesList.css";
+import "./../common/componentUtils.js";
+import { dateFormat } from "./../common/componentUtils.js";
 
 function printPatch(launch) {
   if(launch.links.patch.small){
   return (
     <img
-      className="img-fluid"
+      className="img-fluid patch"
       src={launch.links.patch.small}
       alt="N/A"
     />
@@ -40,7 +43,7 @@ function LaunchesList(props) {
                 { printPatch(launch) }
               </td>
               <td>{launch.flight_number}</td>
-              <td>{launch.date_local}</td>
+              <td>{dateFormat(launch.date_local)}</td>
             </tr>
           );
         })}
