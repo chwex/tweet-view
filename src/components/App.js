@@ -5,7 +5,6 @@ import Header from "./common/Header";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import TweetView from "./TweetView";
 import LaunchesPage from "./launches/LaunchesPage";
 import LaunchDetail from "./launches/LaunchDetail";
 import RocketDetail from "./launches/RocketDetail";
@@ -18,7 +17,6 @@ function App() {
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/about" component={AboutPage} />
-        <Route path="/tweet-view" component={TweetView} />
         <Route path="/launches" component={LaunchesPage} />
         <Route path="/launch/:slug" component={LaunchDetail} /> 
         <Route path="/rocket/:slug" component={RocketDetail} /> 

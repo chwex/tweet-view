@@ -9,10 +9,6 @@ function Header() {
         Home
       </NavLink>{" "}
       {" | "}
-      <NavLink activeStyle={activeStyle} to="/tweet-view">
-        TwitterView
-      </NavLink>{" "}
-      {" | "}
       <NavLink activeStyle={activeStyle} to="/launches">
         SpaceX
       </NavLink>
